@@ -22,6 +22,9 @@
 .active{
     color: #ff751a !important;
 }
+.bg-active{
+    background-color: #f4be99 !important;
+}
 .nav-link{
     color: black;
     font-size: 23px;
@@ -224,16 +227,98 @@ h2 b,h2 span{
 .dept-cards2 h2 span,.dept-cards2 h2 b{
     color: #ff751a;
 }
+/* features */
+
+.our_features  h2,.aboutus h2{
+    text-align: center;
+    margin: 40px 0;
+    margin-top: 150px;
+}
+.our_features  h2 b,.our_features  h2 span,.aboutus h2 b,.aboutus h2 span{
+    color: #ff9a56;
+    font-size: 50px;
+}
+.sub_head{
+    color: rgb(95, 92, 92);
+}
+.our_features .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 200px 0 200px;
+}
+.our_features .col{
+    border: 2px solid #dedada;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 6px;
+    width: 200px;
+}
+.fa-brands{
+    color: black;
+    background-color: rgb(227, 251, 216);
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px;
+    margin-right: 50px;
+} 
+.bg-active{
+    background-color: #f4be99;
+}
+
+/* aboutus*/
+.aboutus h2{
+    margin-bottom: 5px !important;
+}
+.words{
+    color: #979595;
+    font-size: 25px;
+    margin: 0px !important;
+}
+.h{
+    margin: 50px;
+    color: black;
+    font-weight: 800;
+    font-size: 48px;
+}
+.lorem{
+    color: #979595;
+    line-height: 35.2px;
+    font-size: 18px;
+    margin: 50px 100px;
+}
+
+/*footer*/
+
+
+footer{
+    background-color: #ff8f21;
+    height:60vh;
+    margin-top: 400px;
+    position: relative;
+}
+.logo2{
+    background-color: #ff8f21;
+    border: 2px solid #cbc7c7; 
+    height: 8vh;
+    padding: 10px 30px;
+    width: 150px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    font-size: 30px;
+}
 
 /* -- Media Queries --*/
 
 @media (max-width: 575.98px) { 
     .navbar {
-        width: 345vw;
+        width: 405vw;
     }
     .banner {
         height: 50vh;
-        width: 345vw;
+        width: 405vw;
     }
    
     .btn-group button{
@@ -253,19 +338,19 @@ h2 b,h2 span{
     }
     .orange {
         height: 20vh;
-        width: 345vw;
+        width: 405vw;
     }
     .view-button {
-        width: 345vw;
+        width: 405vw;
     }
     .profiles,.cards{
-        width: 200vw;
+        width: 250vw;
     }
     .dept-cards,.dept-cards2, .health-dept{
         margin: 150px;
     }
     .health-dept h2, .dept-cards2 h2{
-        width: 250vw;
+        width: 325vw;
     }
     .card {
         width: 290px;
@@ -276,6 +361,47 @@ h2 b,h2 span{
     }
     .fa-solid{
         font-size: 70px; 
+    }
+    .our_features .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 135px;
+        width: 300vw;
+        flex-wrap: wrap;
+    }
+    .our_features .col{
+        border: 2px solid #dedada;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 6px;
+        width: 270px;
+    }
+    .our_features  h2,.aboutus h2{
+        width: 375vw;
+    }
+    footer{
+        width:405vw;
+        height: 90vh;
+    }
+    .h,.words,.sub_head{
+        width: 405vw;
+    }
+    .h{
+        margin: 30px 0;
+    }
+    .logo2{
+        padding: 2px 20px;
+        height:15vh;
+    }
+    .lorem{
+        width: 375vw;
+       margin: 30px;
+        line-height: 35px;
+        font-size:28px;
+    }
+    .desc,.details{
+        font-size: 28px;
     }
 }
 @media (min-width: 575.98px) and (max-width: 767.98px) {
@@ -311,6 +437,43 @@ h2 b,h2 span{
         width: 250px;
         height: 100vh;
     }
+    .our_features .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 135px;
+        width:170vw;
+    }
+    .our_features .col{
+        border: 2px solid #dedada;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 6px;
+        width: 250px;
+    }
+    .our_features  h2,.aboutus h2{
+        width: 210vw;
+    }
+    footer{
+        width: 210vw;
+        height: 90vh;
+    }
+    .h,.words,.sub_head{
+        width: 210vw;
+    }
+    .h{
+        margin: 30px 0;
+    }
+    .logo2{
+        padding: 2px 20px;
+        height:15vh;
+    }
+    .lorem{
+        width: 200vw;
+        margin: 20px;
+        line-height: 35px;
+    }
+
 }
 @media (min-width: 767.98px) and (max-width: 991.98px){
     .navbar {
@@ -350,6 +513,33 @@ h2 b,h2 span{
         width: 250px;
         height: 30vh;
     }
+    .our_features .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 40px;
+        width:115vw;
+    }
+    .our_features .col{
+        width: 250px;
+    }
+    .our_features  h2,.aboutus h2{
+        width: 130vw;
+    }
+    footer,.h,.words,.sub_head{
+        width: 130vw;
+    }
+    .h{
+        margin: 30px 0;
+    }
+    .logo2{
+        padding: 2px 20px;
+    }
+    .lorem{
+        width: 130vw;
+        margin: 0;
+        line-height: 35px;
+    }
 }
 @media (min-width: 991.98px) and (max-width: 1199.98px){
     .navbar {
@@ -383,6 +573,37 @@ h2 b,h2 span{
     .card {
         width: 230px;
         height: 50vh;
+    }
+    .our_features .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 40px;
+        width:110vw;
+    }
+    .our_features .col{
+        border: 2px solid #dedada;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 6px;
+        width: 250px;
+    }
+    .our_features  h2,.aboutus h2{
+        width: 115vw;
+    }
+    footer,.h,.words,.sub_head{
+        width: 115vw;
+    }
+    .h{
+        margin: 30px 0;
+    }
+    .logo2{
+        padding: 2px 20px;
+    }
+    .lorem{
+        width: 115vw;
+        margin: 0;
+        line-height: 35px;
     }
 }
 
